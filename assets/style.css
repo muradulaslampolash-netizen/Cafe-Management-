@@ -1,0 +1,89 @@
+:root{
+	--cm-primary:#6f42c1; /* purple */
+	--cm-primary-dark:#59339d;
+	--cm-accent:#20c997; /* teal */
+	--cm-bg:#0f1020; /* deep */
+	--cm-surface:#171833;
+	--cm-muted:#9aa0b4;
+	--cm-border:rgba(255,255,255,.08);
+}
+html,body{
+	height:100%;
+}
+body{
+	background: radial-gradient(1200px 600px at 10% -10%, #2a2b55 0%, transparent 60%),
+		radial-gradient(900px 600px at 110% 0%, #1f2945 0%, transparent 60%),
+		var(--cm-bg);
+	color:#edf0f6;
+}
+.navbar{
+	background: linear-gradient(90deg, var(--cm-primary) 0%, var(--cm-accent) 100%) !important;
+}
+.navbar .nav-link, .navbar .navbar-brand{
+	color: #fff !important;
+}
+.card{
+	background-color: var(--cm-surface);
+	border: 1px solid var(--cm-border);
+	color:#e9ecf5;
+}
+.card .card-title{ color:#ffffff; }
+.card .card-text{ color: var(--cm-muted); }
+.card.shadow-sm{ box-shadow: 0 10px 24px rgba(0,0,0,.25) !important;}
+.btn-primary{
+	background: linear-gradient(180deg, var(--cm-primary), var(--cm-primary-dark));
+	border: 0;
+}
+.btn-outline-secondary, .btn-outline-danger, .btn-outline-primary{
+	border-color: var(--cm-border);
+	color:#dbe1ed;
+}
+.table{
+	color:#e9ecf5;
+}
+.table thead th{
+	color:#cbd3e5;
+	border-bottom:1px solid var(--cm-border);
+}
+.table td{
+	border-top:1px solid var(--cm-border);
+}
+.badge.bg-secondary{
+	background-color:#37406a !important;
+}
+.form-control, .form-select{
+	background-color:#12122a;
+	border:1px solid var(--cm-border);
+	color:#f1f4fb;
+}
+.form-control:focus, .form-select:focus{
+	border-color: var(--cm-accent);
+	box-shadow: 0 0 0 .2rem rgba(32,201,151,.2);
+}
+.alert{
+	border:1px solid var(--cm-border);
+}
+.hero{
+	background: radial-gradient(600px 240px at 10% 20%, rgba(111,66,193,.35), transparent 60%),
+		radial-gradient(700px 260px at 85% 10%, rgba(32,201,151,.25), transparent 60%);
+	border:1px solid var(--cm-border);
+	border-radius: 1rem;
+	padding:2rem;
+	margin-bottom:1.5rem;
+}
+.hero h1{ letter-spacing:.5px; }
+.price{
+	color:#b8ffd8;
+	font-weight:600;
+}
+.menu-card:hover{
+	transform: translateY(-2px);
+	transition: transform .2s ease;
+}
+.timeline { list-style: none; padding-left: 0; margin: 0; }
+.timeline li { position: relative; padding-left: 1.25rem; margin-bottom: .5rem; }
+.timeline li::before { content: ""; position: absolute; left: .25rem; top:.55rem; width:.5rem; height:.5rem; border-radius:50%; background: var(--cm-accent); box-shadow: 0 0 0 3px rgba(32,201,151,.2);}
+.footer-note{
+	color: var(--cm-muted);
+}
+
